@@ -33,11 +33,8 @@ const useStyles = makeStyles((theme) => ({
   rootBox: {
     justifyContent: 'center',
     width: "60%",
-    maxWidth: '60%',
     [theme.breakpoints.down('sm')]: {
         justifyContent: 'center',
-        width: "90%",
-        maxWidth: '90%',
       },
   }
 }));
