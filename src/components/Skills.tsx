@@ -7,8 +7,6 @@ import Typography from '@material-ui/core/Typography'
 
 const useStyles = makeStyles((theme) => ({
   cardClass: {
-    // width: 730,
-    // maxWidth: '100%',
     margin: '0.5%',
     backgroundColor: '#EDEDED',
     opacity: 0.94,
@@ -31,6 +29,7 @@ const useStyles = makeStyles((theme) => ({
         },
     },
   rootBox: {
+    justifyContent: 'center',
     width: "60%",
     [theme.breakpoints.down('sm')]: {
         width: "90%",
@@ -44,12 +43,12 @@ const Skills: React.FC = () => {
   return (
     <>
       <Box p={2} className={classes.rootBox}>
-        <Box display='flex' justifyContent='center' p={1} >
+        <Box p={1} >
           <Typography variant='h5' className={classes.title} >
             Skills
           </Typography>
         </Box>
-            <Box display='flex' justifyContent='center' p={1}>
+            <Box p={1} >
                 <Card className={classes.cardClass}>
                     <CardContent>
                     <Typography variant="h6" className={classes.text}>
@@ -60,8 +59,6 @@ const Skills: React.FC = () => {
                     </Typography>
                     </CardContent>
                 </Card>
-            </Box>
-            <Box display='flex' justifyContent='center' p={1} >
                 <Card className={classes.cardClass}>
                     <CardContent>
                     <Typography variant="h6" className={classes.text}>
@@ -72,8 +69,6 @@ const Skills: React.FC = () => {
                     </Typography>
                     </CardContent>
                 </Card>
-            </Box>
-            <Box display='flex' justifyContent='center' p={1} >
                 <Card className={classes.cardClass}>
                     <CardContent>
                     <Typography variant="h6" className={classes.text}>
