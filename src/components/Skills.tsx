@@ -6,7 +6,7 @@ import CardContent from '@material-ui/core/CardContent'
 import Typography from '@material-ui/core/Typography'
 
 const useStyles = makeStyles((theme) => ({
-  root: {
+  card: {
     // width: 730,
     // maxWidth: '100%',
     margin: '0.5%',
@@ -30,7 +30,7 @@ const useStyles = makeStyles((theme) => ({
         fontSize: 10,
         },
     },
-  container: {
+  rootBox: {
     justifyContent: 'center',
     width: "60%",
     [theme.breakpoints.down('sm')]: {
@@ -45,14 +45,14 @@ const Skills: React.FC = () => {
 
   return (
     <>
-      <Box p={2} className={classes.container}>
+      <Box p={2} className={classes.rootBox}>
         <Box display='flex' justifyContent='center' p={1} >
           <Typography variant='h5' className={classes.title} >
             Skills
           </Typography>
         </Box>
             <Box display='flex' justifyContent='center' p={1}>
-                <Card className={classes.root}>
+                <Card className={classes.card}>
                     <CardContent>
                     <Typography variant="h6" className={classes.text}>
                         言語
@@ -64,7 +64,7 @@ const Skills: React.FC = () => {
                 </Card>
             </Box>
             <Box display='flex' justifyContent='center' p={1} >
-                <Card className={classes.root}>
+                <Card className={classes.card}>
                     <CardContent>
                     <Typography variant="h6" className={classes.text}>
                         フレームワーク
@@ -76,7 +76,7 @@ const Skills: React.FC = () => {
                 </Card>
             </Box>
             <Box display='flex' justifyContent='center' p={1} >
-                <Card className={classes.root}>
+                <Card className={classes.card}>
                     <CardContent>
                     <Typography variant="h6" className={classes.text}>
                         データベース

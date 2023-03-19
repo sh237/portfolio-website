@@ -21,7 +21,7 @@ const useStyles = makeStyles((theme) => ({
   title: {
     fontWeight: 'bold',
   },
-  container: {
+  rootBox: {
     justifyContent: 'center',
     width: "70%",
     [theme.breakpoints.down('sm')]: {
@@ -39,7 +39,7 @@ const Works: React.FC = () => {
 
   return (
     <>
-      <Box p={2} className={ classes.container } >
+      <Box p={2} className={ classes.rootBox } >
         <Box p={1} >
           <Typography variant='h5' className={ classes.title } >
             Works
