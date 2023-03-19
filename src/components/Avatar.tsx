@@ -14,11 +14,18 @@ const useStyles = makeStyles((theme) => ({
     width: theme.spacing(30),
     height: theme.spacing(30),
     border: 'solid 5px #D6D6D6',
+    [theme.breakpoints.down('sm')]: {
+      width: theme.spacing(20),
+      height: theme.spacing(20),
+    },
   },
   name: {
     paddingTop: theme.spacing(4),
     shadow: '0 0 10px #000',
     fontWeight: 'bold',
+    [theme.breakpoints.down('sm')]: {
+      fontSize: 20,
+    },
   }
 }));
 

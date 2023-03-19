@@ -18,7 +18,16 @@ const useStyles = makeStyles((theme) => ({
         color: '#4D4D4D',
         fontSize: 16,
         fontWeight: 'bold',
-    }
+        [theme.breakpoints.down('sm')]: {
+            fontSize: 13,
+          },
+    },
+    rootBox: {
+        width: "55%",
+        [theme.breakpoints.down('sm')]: {
+            width: "80%",
+          },
+    },
   }));
 
 const About: React.FC = () => {
@@ -26,7 +35,7 @@ const About: React.FC = () => {
 
     return (
         <>
-        <Box p={2}>
+        <Box p={2} className={classes.rootBox}>
             <Box display='flex' justifyContent='center' p={1}>
                 <Typography variant='h5' className={classes.title} >
                     About

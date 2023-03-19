@@ -12,8 +12,7 @@ import FolderIcon from '@material-ui/icons/Folder'
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    width: 770,
-    maxWidth: '100%',
+    // width: 770,
     backgroundColor: '#EDEDED',
     padding: '0.5%',
     color: '#2E2E2E',
@@ -21,7 +20,14 @@ const useStyles = makeStyles((theme) => ({
   },
   title: {
     fontWeight: 'bold',
-  }
+  },
+  container: {
+    justifyContent: 'center',
+    width: "70%",
+    [theme.breakpoints.down('sm')]: {
+        width: "90%",
+      },
+  },
 }));
 
 function ListItemLink(props: ListItemProps<'a', { button?: true }>) {
@@ -33,13 +39,13 @@ const Works: React.FC = () => {
 
   return (
     <>
-      <Box p={2}>
-        <Box display='flex' justifyContent='center' p={1} >
+      <Box p={2} className={ classes.container } >
+        <Box p={1} >
           <Typography variant='h5' className={ classes.title } >
             Works
           </Typography>
         </Box>
-        <Box display='flex' justifyContent='center' p={1} >
+        <Box p={1} >
           <List className={classes.root}>
             <ListItem>
               <ListItemLink href='https://github.com/sh237/LocationTrackingAppEjected'>

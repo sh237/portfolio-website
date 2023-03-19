@@ -25,6 +25,15 @@ const useStyles = makeStyles((theme) => ({
         fontSize: 16,
         fontWeight: 'bold',
         color: '#3B3B3B',
+        [theme.breakpoints.down('sm')]: {
+            fontSize: 12,
+          },
+    },
+    textSecondary:  {
+        fontSize: 14,
+        [theme.breakpoints.down('sm')]: {
+            fontSize: 8,
+          },
     },
     root: {
         display: 'flex',
@@ -33,7 +42,10 @@ const useStyles = makeStyles((theme) => ({
         opacity: 0.94,
     },
     rootBox: {
-        width: 650,
+        width: "58%",
+        [theme.breakpoints.down('sm')]: {
+            width: "90%",
+          },
     },
   }));
   
@@ -51,7 +63,7 @@ const useStyles = makeStyles((theme) => ({
             <Timeline
                 sx={{
                     [`& .${timelineOppositeContentClasses.root}`]: {
-                    flex: 0.3,
+                    flex: 0.7,
                     },
                 }}
                 className={classes.root}
@@ -86,7 +98,7 @@ const useStyles = makeStyles((theme) => ({
                         <Typography className={classes.text}>
                             家庭教師のアルバイトを行う。
                         </Typography>
-                        <Typography variant='body2' color='textPrimary'>
+                        <Typography variant='body2' color='textPrimary' className={classes.textSecondary}>
                             大学受験生の数学、物理、英語の授業を行った。
                         </Typography>
                     </TimelineContent>
@@ -105,7 +117,7 @@ const useStyles = makeStyles((theme) => ({
                         <Typography className={classes.text}>
                             Djangoでwebアプリを作成する。<br/>
                         </Typography>
-                        <Typography variant='body2' color='textPrimary'>
+                        <Typography variant='body2' color='textPrimary'className={classes.textSecondary}>
                             独学で学びつつ、様々なアプリを作成する。
                         </Typography>
                     </TimelineContent>
@@ -124,7 +136,7 @@ const useStyles = makeStyles((theme) => ({
                         <Typography className={classes.text}>
                             N Code Laboでアルバイトを行う。
                         </Typography>
-                        <Typography variant='body2' color='textPrimary'>
+                        <Typography variant='body2' color='textPrimary'className={classes.textSecondary}>
                             Pythonでのwebアプリ開発、機械学習やUnityでのゲーム開発など幅広い内容を中高生に教える。
                         </Typography>
                     </TimelineContent>
@@ -143,7 +155,7 @@ const useStyles = makeStyles((theme) => ({
                         <Typography className={classes.text}>
                             Reactでwebアプリを作成する。
                         </Typography>
-                        <Typography variant='body2' color='textPrimary'>
+                        <Typography variant='body2' color='textPrimary'className={classes.textSecondary}>
                             チームでの開発も行った。
                         </Typography>
                     </TimelineContent>
