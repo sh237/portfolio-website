@@ -36,7 +36,7 @@ const About: React.FC = () => {
     return (
         <>
         <Box p={2} className={classes.rootBox}>
-            <Box display='flex' justifyContent='center' p={1}>
+            <Box display='flex' p={1}>
                 <Typography variant='h5' className={classes.title} >
                     About
                 </Typography>
