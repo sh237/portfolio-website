@@ -1,26 +1,48 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import Navbar from './components/Navbar'
+import MyAvatar from './components/Avatar'
+import About from './components/About'
+import Skills from './components/Skills'
+import Works from './components/Works'
+import Contact from './components/Contact'
+import ScrollUpToTop from './components/ScrollUpToTop'
+import Career from './components/Career'
 
-function App() {
+const App: React.FC = () => {
+  const sectionStyle = {
+    height: '60v',
+    paddingTop: '6vh',
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center"
+  };
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{height: '100vh'}}>
+      <section>
+        <Navbar />
+      </section>
+      <section style={sectionStyle}>
+        <MyAvatar />
+      </section>
+      <section id='about' style={sectionStyle}>
+        <About />
+      </section>
+      <section id='career' style={sectionStyle}>
+        <Career />
+      </section>
+      <section id='skills' style={sectionStyle}>
+        <Skills />
+      </section>
+      <section id='works' style={sectionStyle}>
+        <Works />
+      </section>
+      <section id='contact' style={sectionStyle}>
+        <Contact />
+      </section>
+      <ScrollUpToTop />
     </div>
   );
 }
-
 export default App;
