@@ -6,7 +6,7 @@ import CardContent from '@material-ui/core/CardContent'
 import Typography from '@material-ui/core/Typography'
 
 const useStyles = makeStyles((theme) => ({
-  card: {
+  cardClass: {
     // width: 730,
     // maxWidth: '100%',
     margin: '0.5%',
@@ -54,7 +54,7 @@ const Skills: React.FC = () => {
           </Typography>
         </Box>
             <Box display='flex' justifyContent='center' p={1}>
-                <Card className={classes.card}>
+                <Card className={classes.cardClass}>
                     <CardContent>
                     <Typography variant="h6" className={classes.text}>
                         言語
@@ -66,7 +66,7 @@ const Skills: React.FC = () => {
                 </Card>
             </Box>
             <Box display='flex' justifyContent='center' p={1} >
-                <Card className={classes.card}>
+                <Card className={classes.cardClass}>
                     <CardContent>
                     <Typography variant="h6" className={classes.text}>
                         フレームワーク
@@ -78,7 +78,7 @@ const Skills: React.FC = () => {
                 </Card>
             </Box>
             <Box display='flex' justifyContent='center' p={1} >
-                <Card className={classes.card}>
+                <Card className={classes.cardClass}>
                     <CardContent>
                     <Typography variant="h6" className={classes.text}>
                         データベース

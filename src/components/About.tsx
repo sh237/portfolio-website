@@ -4,7 +4,7 @@ import Box from '@material-ui/core/Box'
 import Typography from '@material-ui/core/Typography'
 
 const useStyles = makeStyles((theme) => ({
-    root: {
+    container: {
         backgroundColor: '#EDEDED',
         borderWidth: '10px',
         padding: '2.5%',
@@ -41,7 +41,7 @@ const About: React.FC = () => {
                     About
                 </Typography>
             </Box>
-            <Box display='flex' justifyContent='center' p={1} className={classes.root}>
+            <Box display='flex' justifyContent='center' p={1} className={classes.container}>
                 <Typography variant='body1' align='left' className={classes.text}>
                     長嶋隼矢と申します。<br/>
                     慶應義塾大学理工学部情報工学科杉浦孔明研究室に所属しております。<br/>研究室ではマルチモーダル言語処理について研究しています。
